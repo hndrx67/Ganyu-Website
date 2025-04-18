@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ganyu Appreciation | Home</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="../static/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,8 +30,8 @@
                 <span>Ganyu</span>
             </div>
             <ul class="nav-links">
-                <li><a href="/" class="active">Home</a></li>
-                <li><a href="/gallery">Gallery</a></li>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
             </ul>
         </nav>
     </header>
@@ -44,10 +44,10 @@
                 <p class="fade-in">Half human, half qilin. As the secretary of the Liyue Qixing, she always takes her work seriously and efficiently.</p>
                 <br>
                 <p class="fade-in">Created by her loving husband: Drixxyy</p>
-                <a href="/gallery" class="btn slide-up">View Gallery</a>
+                <a href="gallery.html" class="btn slide-up">View Gallery</a>
             </div>
             <div class="hero-image fade-in">
-                <img src="{{ url_for('static', filename='images/ganyu_portrait.png') }}" alt="Ganyu Portrait">
+                <img src="../static/images/ganyu_portrait.png" alt="Ganyu Portrait">
             </div>
         </section>
 
@@ -80,6 +80,6 @@
         <p>Ganyu Appreciation Page by HNDRX.ORG | its from PH ofc | Fan-made content by her Husband | Not affiliated with miHoYo/HoYoverse</p>
     </footer>
 
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="../static/js/script.js"></script>
 </body>
 </html>
