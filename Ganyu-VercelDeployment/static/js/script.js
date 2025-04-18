@@ -85,10 +85,12 @@ document.addEventListener('DOMContentLoaded', function() {
         link.addEventListener('click', function(e) {
             const href = this.getAttribute('href');
             
-            if (href.startsWith('/')) {
-                return; // Allow normal navigation for different pages
+            // If it's a page link (contains .html) or starts with /, allow normal navigation
+            if (href.includes('.html') || href.startsWith('/')) {
+                return; // Allow normal navigation
             }
             
+            // Otherwise it's an anchor link, handle smooth scrolling
             e.preventDefault();
             const targetId = href.replace('#', '');
             const targetElement = document.getElementById(targetId);
